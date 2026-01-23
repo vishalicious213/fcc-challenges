@@ -1,3 +1,4 @@
+// #146
 // https://www.freecodecamp.org/learn/daily-coding-challenge/2026-01-03
 
 function findLeftHandedSeats(table) {
