@@ -12,3 +12,7 @@ function getBingoLetter(n) {
   : n <= 75 ? "O"
   : null
 }
+
+
+// one-liner from Sam
+// return 'BINGO'[Math.floor((n - 1) / 15)]
