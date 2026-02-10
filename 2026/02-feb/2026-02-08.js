@@ -8,6 +8,7 @@ function calculatePenaltyDistance(rounds) {
     .reduce((total, curr) => total + curr, 0)
 }
 
+
 // single-pass version using .reduce()
 
 function calculatePenaltyDistance(rounds) {
@@ -24,3 +25,16 @@ const calculatePenaltyDistance = rounds =>
     (total, round) => total + (5 - parseInt(round)) * 150,
     0
   )
+
+
+// .forEach() version, no .reduce() & internal accumulator
+
+function calculatePenaltyDistance(rounds) {
+  let total = 0
+
+  rounds.forEach(round => {
+    total += (5 - parseInt(round)) * 150
+  })
+
+  return total
+}
